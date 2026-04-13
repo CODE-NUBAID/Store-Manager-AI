@@ -1,0 +1,11 @@
+python-dotenv
+google-generativeai
+langchain-google-genai
+langchain
+langchain-community
+langchain-experimental
+tensorflow
+scikit-learn
+pandas
+numpy
+flask

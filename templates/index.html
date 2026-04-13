@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Store Manager AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="badge">AI · Retail Intelligence</div>
+    <h1>Store Manager <em>AI</em></h1>
+    <p class="subtitle">Ask anything about your store — forecasts, trends, and strategy.</p>
+  </header>
+
+  <div class="cards">
+    <div class="card" onclick="setQuery('Forecast sales for tomorrow')">
+      <div class="card-icon">📈</div>
+      <div class="card-label">Forecast</div>
+      <div class="card-text">Forecast sales for tomorrow</div>
+    </div>
+    <div class="card" onclick="setQuery('Show me recent sales trends for the last 7 days')">
+      <div class="card-icon">📊</div>
+      <div class="card-label">Trends</div>
+      <div class="card-text">Recent sales trends (7 days)</div>
+    </div>
+    <div class="card" onclick="setQuery('What is the store type and competition distance?')">
+      <div class="card-icon">🏪</div>
+      <div class="card-label">Store Info</div>
+      <div class="card-text">Store type & competition info</div>
+    </div>
+  </div>
+
+  <div class="chat-wrap">
+    <div id="chat-log"></div>
+    <div class="input-bar">
+      <textarea id="query" placeholder="Ask about sales, forecasts, or strategy..."></textarea>
+      <button id="send-btn" onclick="sendQuery()">&#9654;</button>
+    </div>
+  </div>
+
+  <div class="train-row">
+    <button id="train-btn" onclick="trainModel()">⟳ Retrain Model</button>
+    <span id="train-status"></span>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+
+</html>

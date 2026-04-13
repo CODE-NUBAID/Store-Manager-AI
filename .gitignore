@@ -1,0 +1,16 @@
+# Python environment
+venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+
+
+src/data/recentdata.csv
+src/salesmodel.keras
+src/scaler.pkl
+
+# Flask/OS temporary files
+.pytest_cache/
+.DS_Store
