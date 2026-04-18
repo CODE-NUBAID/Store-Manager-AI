@@ -33,9 +33,6 @@ def forecast_next_day_sales():
 
 tools = [get_recent_sales_data, get_store_metadata, forecast_next_day_sales]
 
-# NOTE: The trailing space after "Thought:" is intentional.
-# Gemini requires every message to have non-empty content.
-# Without it, an empty agent_scratchpad causes "contents are required" error.
 REACT_PROMPT = PromptTemplate.from_template(
     "You are a Retail Strategy AI. Help the store manager with sales trends, forecasts, and business decisions.\n\n"
     "Tools available:\n{tools}\n\n"
@@ -52,7 +49,6 @@ REACT_PROMPT = PromptTemplate.from_template(
     "Question: {input}\n"
     "Thought: {agent_scratchpad}"
 )
-
 
 def init_agent():
     global loaded_model, loaded_scaler, df_recent
