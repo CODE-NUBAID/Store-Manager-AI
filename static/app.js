@@ -2,13 +2,11 @@ const chatLog = document.getElementById('chat-log');
 const queryEl = document.getElementById('query');
 const sendBtn = document.getElementById('send-btn');
 
-// Auto-grow textarea
 queryEl.addEventListener('input', () => {
   queryEl.style.height = 'auto';
   queryEl.style.height = Math.min(queryEl.scrollHeight, 120) + 'px';
 });
 
-// Enter to send
 queryEl.addEventListener('keydown', e => {
   if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendQuery(); }
 });
