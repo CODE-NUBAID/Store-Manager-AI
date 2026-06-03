@@ -36,3 +36,84 @@ Store manager ai/
 │   └── app.js          # Async API calls
 └── templates/
     └── index.html      # Main Dashboard Interface
+```
+
+## ⚙️ Installation
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/CODE-NUBAID/Store-Manager-AI
+```
+
+## 2. Set Up a Virtual Environment
+
+### Linux / macOS
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+## 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 4. Configure Environment Variables
+
+Create a `.env` file in the project's root directory and add the following:
+
+```env
+GOOGLE_API_KEY=your_gemini_api_key_here
+```
+
+## 5. Run the Application
+
+```bash
+python app.py
+```
+
+## 6. Open the Dashboard
+
+After starting the application, open your browser and navigate to:
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+### 📌 Quick Start
+
+```bash
+# Clone repository
+git clone https://github.com/yourusername/store-manager-ai.git
+cd store-manager-ai
+
+# Create and activate virtual environment
+python -m venv venv
+
+# Linux/macOS
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Create .env file and add:
+# GOOGLE_API_KEY=your_gemini_api_key_here
+
+# Run application
+python app.py
+``` 
