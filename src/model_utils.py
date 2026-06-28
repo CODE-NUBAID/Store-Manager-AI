@@ -37,7 +37,7 @@ def train_and_save_model():
         Dense(1)
     ])
     model.compile(optimizer='adam', loss='mean_squared_error')
-    model.fit(X, y, batch_size=64, epochs=3, verbose=1)
+    model.fit(X, y, batch_size=64, epochs=20, verbose=1)
 
     model.save('src/salesmodel.keras')
     with open('src/scaler.pkl', 'wb') as f:
